@@ -2,7 +2,7 @@
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-HOMEBREW_MCC_VERSION='0.9.1'
+HOMEBREW_MCC_VERSION='0.9.2'
 class Mcc < Formula
   desc "A terminal dashboard, command launcher, GitHub client.. etc"
   homepage ""
