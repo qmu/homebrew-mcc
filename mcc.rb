@@ -17,7 +17,8 @@ class Mcc < Formula
     dir.install Dir["*"]
     cd dir do
       system "glide", "install"
-      system "go", "build", "-o", "bin/mcc", "-ldflags", "-X main.Version=#{HOMEBREW_MCC_VERSION}"
+      system "go", "build", "-o", "bin/mcc", "-ldflags", "-X main.Version=#{HOMEBREW_MCC_VERSION}", "-ldflags", "-X main.ConfigSchemaVersion=#{CONFIG_SCHEMA_VERSION}"
+      bin.install "mcc"
     end
   end
 
