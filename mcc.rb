@@ -18,7 +18,7 @@ class Mcc < Formula
     cd dir do
       system "glide", "install"
       system "go", "build", "-o", "bin/mcc", "-ldflags", "-X main.Version=#{HOMEBREW_MCC_VERSION}", "-ldflags", "-X main.ConfigSchemaVersion=#{CONFIG_SCHEMA_VERSION}"
-      bin.install "mcc"
+      bin.install "bin/mcc"
     end
   end
 
