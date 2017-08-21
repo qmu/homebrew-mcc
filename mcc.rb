@@ -22,7 +22,7 @@ class Mcc < Formula
     ldflags = "-ldflags \"-X main.Version=$(#{HOMEBREW_MCC_VERSION}) -X main.ConfigSchemaVersion=$(#{CONFIG_SCHEMA_VERSION})\""
     cd dir do
       system "glide", "install"
-      system "go", "build", ldflags, "-o", bin/"mcc"
+      system "go", "build", ldflags, "-o\"", bin/"mcc\""
     end
   end
 
