@@ -4,7 +4,7 @@ class Mcc < Formula
   desc "The mcc is a terminal dashboard, command launcher, GitHub client.. etc"
   homepage "https://github.com/qmu"
   url "https://github.com/qmu/mcc/releases/download/v#{VERSION}/darwin_amd64_mcc"
-  sha256 "aabf03f48171c5da072e86415419fc87cfa1bd15a8601647f5ad39751131df57"
+  sha256 "f55c69663cf027dfab93d72807351c41578aafcbbb7551a62f3d03a6fad9852f"
   head "https://github.com/qmu/mcc.git", :branch => "master"
 
   depends_on "go" => :build
