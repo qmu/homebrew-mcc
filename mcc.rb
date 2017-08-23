@@ -4,6 +4,7 @@ class Mcc < Formula
 
   desc "The mcc is a terminal dashboard, command launcher, GitHub client.. etc"
   homepage "https://github.com/qmu"
+  version VERSION
   url "https://github.com/qmu/mcc.git", :tag => "v#{VERSION}"
   sha256 "44153f22b396e4a37e3c7e8a1cf049dc4d689ebc18636770d5b9f493f1cd1418"
   head "https://github.com/qmu/mcc.git", :branch => "master"
