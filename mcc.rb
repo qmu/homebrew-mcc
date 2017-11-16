@@ -5,7 +5,8 @@ class Mcc < Formula
   desc "The mcc is a terminal dashboard, command launcher, GitHub client.. etc"
   homepage "https://github.com/qmu"
   version VERSION
-  url "https://github.com/qmu/mcc.git", :tag => "v#{VERSION}"
+  url "https://github.com/qmu/mcc/archive/v#{VERSION}.tar.gz"
+  
   sha256 "44153f22b396e4a37e3c7e8a1cf049dc4d689ebc18636770d5b9f493f1cd1418"
   head "https://github.com/qmu/mcc.git", :branch => "master"
 
@@ -13,15 +14,7 @@ class Mcc < Formula
   depends_on "glide" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
-    ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
-    dir = buildpath/"src/github.com/qmu/mcc"
-    dir.install Dir["*"]
-    cd dir do
-      system "glide", "install"
-      system("go build -o mcc -ldflags \"-X main.Version=#{VERSION} -X main.ConfigSchemaVersion=#{CONFIG_SCHEMA_VERSION}\"")
-      bin.install "mcc"
-    end
+    bin.install 'mcc'
   end
 
   test do
