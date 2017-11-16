@@ -7,7 +7,7 @@ class Mcc < Formula
   version VERSION
   url "https://github.com/qmu/mcc/archive/v#{VERSION}.tar.gz"
   
-  sha256 "44153f22b396e4a37e3c7e8a1cf049dc4d689ebc18636770d5b9f493f1cd1418"
+  sha256 "e71983bb1b5b1c19df6423e61b67f338305fefaa0705f4337601f19b7ddbbedf"
   head "https://github.com/qmu/mcc.git", :branch => "master"
 
   depends_on "go" => :build
