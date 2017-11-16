@@ -6,7 +6,7 @@ class Mcc < Formula
   homepage "https://github.com/qmu"
   version VERSION
   url "https://github.com/qmu/mcc/releases/download/v#{VERSION}/mcc_v#{VERSION}_darwin_amd64.tar.gz"
-  sha256 "0b523a5ba66b236f40fd8b5fc5b91593e66373999ffb6b8652f97b7e3915378e"
+  sha256 "778aef9efa3a1be47e9ec6ec698402659d06b8aae2ebc6c360eadc1031855115"
   head "https://github.com/qmu/mcc.git", :branch => "master"
 
   depends_on "go" => :build
