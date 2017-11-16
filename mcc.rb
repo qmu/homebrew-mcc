@@ -1,5 +1,5 @@
 class Mcc < Formula
-  VERSION="0.9.4".freeze
+  VERSION="0.9.5".freeze
   CONFIG_SCHEMA_VERSION="1.0.0".freeze
 
   desc "The mcc is a terminal dashboard, command launcher, GitHub client.. etc"
