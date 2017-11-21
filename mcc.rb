@@ -1,16 +1,12 @@
 class Mcc < Formula
-  VERSION="0.9.5".freeze
-  CONFIG_SCHEMA_VERSION="1.0.0".freeze
+  VERSION="0.9.6".freeze
 
   desc "The mcc is a terminal dashboard, command launcher, GitHub client.. etc"
   homepage "https://github.com/qmu"
   version VERSION
   url "https://github.com/qmu/mcc/releases/download/v#{VERSION}/mcc_v#{VERSION}_darwin_amd64.tar.gz"
-  sha256 "0eb7c562bd7c8d18054a4c177b0bffa299fdf9a029bee6bb33210865890505cb"
+  sha256 "1a02325535d2c5b59681c38baa59c18aa58e4d943f2531ddf84aba5cbfc7275a"
   head "https://github.com/qmu/mcc.git", :branch => "master"
-
-  depends_on "go" => :build
-  depends_on "glide" => :build
 
   def install
     bin.install 'mcc'
